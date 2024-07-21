@@ -153,7 +153,7 @@
   position: relative;
   width: 36vw;
   height: 36vw;
-  border: 0.4vw solid rgba(255, 255, 255, 0.4);
+  border: 0.4vw solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   animation: rotate 7s infinite linear; /* Apply animation */
 }
@@ -171,7 +171,7 @@
 }
 
 .circle.pink {
-  border: 0.4vw solid rgba(255, 255, 255, 0.4);
+  border: 0.4vw solid rgba(255, 255, 255, 0.2);
   background-color: rgb(32, 48, 70);
 }
 
@@ -206,4 +206,27 @@
 .smt-text{
     color: #27374d;
     font-size: 12px;
+}
+
+
+.child-circle-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 28vw;
+  height: 28vw;
+  border: 15px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.child-circle-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 22vw;
+  height: 22vw;
+  border: 5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
 }

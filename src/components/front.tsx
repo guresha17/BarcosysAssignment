@@ -14,7 +14,7 @@ const Front: React.FC = () => {
 
   return (
     <div className="main-container front-main-container-background">
-      <Row style={{ marginBottom: "10%" }}>
+      <Row style={{ marginBottom: "5%" }}>
         <Col span={10}>
           <Row style={{ marginBottom: "7%" }}>
             <Col span={2}>
@@ -149,7 +149,10 @@ const Front: React.FC = () => {
               src="/assets/Layer 1 1.png"
               style={{ height: "24px", width: "24px", marginRight: "1%" }}
             />
-            <Typography className="saffron-mount-text">
+            <Typography
+              className="saffron-mount-text"
+              style={{ marginLeft: "1%" }}
+            >
               Saffron Mount
             </Typography>
           </Row>
@@ -165,9 +168,9 @@ const Front: React.FC = () => {
           <Col span={8}>
             <Button
               className="menu-button"
-              onClick={() => {
-                navigate("/smt");
-              }}
+              // onClick={() => {
+              //   navigate("/smt");
+              // }}
             >
               Buy Smt
             </Button>
@@ -264,11 +267,15 @@ const Front: React.FC = () => {
           >
             <div id="parent-circle">
               <div className="circle pink"></div>
+              <div className="child-circle-1">
+              <div className="child-circle-2">
               <Image
                 src="/assets/Layer 1 1.png"
                 className={rotate ? "rotate-image" : ""}
-                style={{ width: "80%", height: "80%" }}
+                style={{ width: "100%", height: "100%" }}
               />
+              </div>
+              </div>
             </div>
           </Col>
           <Col span={7}>
@@ -481,7 +488,12 @@ const Front: React.FC = () => {
                 src="/assets/Layer 1 1.png"
                 style={{ width: "1rem", height: "1rem" }}
               />
-              <Typography className="balance-value">0.0000</Typography>
+              <Typography
+                className="balance-value"
+                style={{ marginLeft: "1%" }}
+              >
+                0.0000
+              </Typography>
             </Row>
           </Col>
           <hr style={{ color: "#9db2bf", width: "100%", margin: "1% 0" }}></hr>
@@ -532,7 +544,12 @@ const Front: React.FC = () => {
                     span={12}
                     style={{ display: "flex", justifyContent: "flex-start" }}
                   >
-                    <Typography className="teb-value">0</Typography>
+                    <Typography
+                      className="teb-value"
+                      style={{ marginLeft: "1%" }}
+                    >
+                      0
+                    </Typography>
                   </Col>
                 </Row>
               </Col>
@@ -547,6 +564,7 @@ const Front: React.FC = () => {
           position: "relative",
           borderRadius: "8px",
           boxShadow: "2px 2px 2px rgba(255, 255, 255, 0.5)",
+          padding:"8px"
         }}
       >
         <Row
